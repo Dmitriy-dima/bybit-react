@@ -1,0 +1,101 @@
+@import "variables.scss";
+
+.App-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: $bg-secondary;
+  overflow: hidden;
+  .footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1156px;
+    padding: 60px 25px 60px 25px;
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      .footer-logo {
+        img {
+          max-width: 120px;
+          max-height: 40px;
+        }
+      }
+      .footer-bottom_links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        text-decoration: none;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        flex-wrap: wrap;
+        li {
+          a {
+            color: $text-primary-inverse;
+            line-height: 24px;
+            font-size: 16px;
+            font-weight: 500;
+            text-decoration: none;
+            &:hover {
+              color: $text-accent;
+            }
+          }
+        }
+      }
+      .footer-socials {
+        display: flex;
+        gap: 16px;
+        img {
+          max-width: 24px;
+          max-height: 24px;
+        }
+      }
+    }
+  }
+  .footer-bottom {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    padding: 24px 25px 24px 25px;
+    gap: 24px;
+    background-color: $bg-primary;
+    .copyright {
+      color: $text-secondary-inverse;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 500;
+    }
+
+    .footer-bottom_links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+      text-decoration: none;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      flex-wrap: wrap;
+      li {
+        a {
+          color: $text-primary-inverse;
+          line-height: 20px;
+          font-size: 14px;
+          font-weight: 500;
+          text-decoration: none;
+          &:hover {
+            color: $text-accent;
+          }
+        }
+      }
+    }
+  }
+}

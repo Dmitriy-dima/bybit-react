@@ -1,0 +1,11 @@
+@import "variables.scss";
+
+.App {
+  display: flex;
+  background-color: $bg-secondary-inverse;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  z-index: 4;
+  overflow: hidden;
+}

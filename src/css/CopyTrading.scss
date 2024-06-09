@@ -1,0 +1,191 @@
+@import "variables.scss";
+
+.copy-trading-section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: $bg-secondary;
+  overflow: hidden;
+  .copy-trading_container {
+    display: flex;
+    width: 100%;
+    max-width: 1156px;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 25px 160px 25px;
+    .copy-trading {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      background-color: $bg-primary;
+      padding: 38px 24px 24px 24px;
+      border-radius: 16px;
+      gap: 96px;
+      .copy-trading_content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 425px;
+        gap: 24px;
+        .trading_text {
+          display: flex;
+          flex-direction: column;
+          h3 {
+            color: $text-primary-inverse;
+            font-size: 32px;
+            line-height: 40px;
+            font-weight: 600;
+          }
+          span {
+            color: $text-secondary-inverse;
+            font-size: 20px;
+            line-height: 28px;
+            font-weight: 500;
+          }
+        }
+        .trading_stats {
+          display: flex;
+          gap: 12px;
+          .stats_card {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            background-color: $bg-secondary;
+            padding: 16px;
+            border-radius: 12px;
+            max-width: 206px;
+            .stats_name {
+              color: $text-secondary-inverse;
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 24px;
+            }
+            .stats_number {
+              color: $text-primary-inverse;
+              font-size: 24px;
+              line-height: 32px;
+              font-weight: 600;
+            }
+          }
+        }
+        .trading-download {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 8px;
+          border: none;
+          border-radius: 6px;
+          cursor: pointer;
+          background-color: $bg-accent;
+          padding: 24px 40px 24px 40px;
+          max-width: 165px;
+          &:hover {
+            background-color: $bg-accent-hover;
+          }
+          span {
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 600;
+            color: $text-primary-inverse;
+          }
+        }
+      }
+      .copy-trading_slider {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        width: 100%;
+        max-width: 544px;
+        .slick-slider {
+          
+          .slick-arrow {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+            padding: 6px;
+            background-color: $bg-accent;
+            &.slick-prev{
+              left: -41px;
+            }
+            &.slick-disabled{
+              opacity: 0.25;
+            }
+            &.slick-next{
+              right: -32px;
+            }
+            &::before{
+              content:none;
+            }
+            img {
+              max-width: 20px;
+              max-height: 20px;
+            }
+          }
+          .slick-list {
+            overflow: hidden;
+            max-width: 512px;
+          }
+          .slick-track {
+            display: flex;
+          }
+        }
+        .slide {
+          display: flex !important;
+          flex-direction: column;
+          background-color: $bg-secondary;
+          padding: 20px;
+          gap: 32px;
+          border-radius: 12px;
+          width: 100%;
+          max-width: 244px;
+          box-sizing: border-box;
+          .slide-profile {
+            display: flex;
+            gap: 12px;
+            img {
+              max-width: 44px;
+              max-height: 44px;
+            }
+            .profile-text {
+              display: flex;
+              flex-direction: column;
+              .profile-name {
+                color: $text-primary-inverse;
+                font-size: 18px;
+                line-height: 24px;
+                font-weight: 600;
+              }
+              .profile-followers {
+                color: $text-secondary-inverse;
+                font-size: 14px;
+                line-height: 20px;
+                font-weight: 400;
+              }
+            }
+          }
+          .slide-stats {
+            display: flex;
+            flex-direction: column;
+            span {
+              color: $text-primary-inverse;
+              font-size: 16px;
+              line-height: 24px;
+              font-weight: 500;
+            }
+          }
+          .slide-followers {
+            display: flex;
+            flex-direction: column;
+            span {
+              color: $text-primary-inverse;
+              font-size: 16px;
+              line-height: 24px;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
+}
