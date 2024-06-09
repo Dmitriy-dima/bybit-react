@@ -2,7 +2,6 @@ import React from "react";
 import "../css/StartSection.scss";
 import bybitGif from "../images/bybitgraphs.gif";
 import bybitGif_mobile from "../images/bybitgraphs_mobile.gif";
-import primaryLight from "../images/primary-light.svg";
 import secondaryLight from "../images/secondary-light.svg";
 
 function StartSection() {
@@ -34,11 +33,6 @@ function StartSection() {
               <div className="epsilon-highlights">
                 <img className="bybitGif" src={bybitGif} alt="bybitGif" />
                 <img className="bybitGif_mobile" src={bybitGif_mobile} alt="bybitGif_mobile" />
-                <img
-                  className="primaryLight"
-                  src={primaryLight}
-                  alt="primaryLight"
-                />
                 <img
                   className="secondaryLight-first"
                   src={secondaryLight}
