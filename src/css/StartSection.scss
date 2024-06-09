@@ -47,7 +47,7 @@
           justify-content: center;
           align-items: center;
           margin-top: 80px;
-          padding: 6px 14px;
+          padding: 8px 14px;
           border-radius: 20px;
           background-color: $bg-accent-subdued;
 
@@ -123,13 +123,16 @@
           pointer-events: none;
           margin-top: 36px;
           object-fit: contain;
-          .bybitGif {
+          .bybitGif_mobile{
+            display: none;
+          }
+          .bybitGif, .bybitGif_mobile {
             max-width: 1156px;
             max-height: 467px;
-            z-index: 3;
+            z-index: 4;
             width: 100%;
             object-fit: cover;
-            mix-blend-mode:multiply; 
+            border-radius: 6px;
           }
 
           .primaryLight {
@@ -164,7 +167,6 @@
             display: flex;
             width: 100%;
             max-width: 852px;
-            border-radius: 20%;
             left: 0;
             bottom: 0;
             z-index: 2; 
@@ -201,6 +203,128 @@
             inset 0 -1px 0 0 $bg-primary-inverse,
             inset 1px 0 0 0 $bg-primary-inverse;
           pointer-events: none;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 491px) and (max-width: 630px) {
+  .start-section {
+    .start-section_container {
+      .grid-wrapper{
+        .grid-pattern{
+          .start-content{
+            padding: 0 15px;
+            .start-badge{
+              padding: 4px 14px;
+              span{
+                font-size: 18px;
+                line-height: 24px;
+                font-weight: 500;
+              }
+            }
+            .title{
+              .title-top{
+                font-size: 68px;
+                line-height: 76px;
+              }
+              .title-bottom{
+                font-size: 52px;
+                line-height: 60px;
+              }
+            }
+            .subtitle{
+              font-size: 20px;
+              line-height: 28px;
+            }
+            .epsilon-highlights{
+             .secondaryLight-first{
+                display: none;
+              }
+              .primaryLight{
+                top: -20%;
+                right: -50%;
+                border-radius: 0px;
+                rotate: -90deg;
+                width: auto;
+                max-width: 1200px;
+
+              }
+              .secondaryLight-second{
+                left: -20%;
+                top: -100%;
+                width: auto;
+                max-width: 1200px;
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 490px) {
+  .start-section {
+    .start-section_container {
+      .grid-wrapper{
+        .grid-pattern{
+          .start-content{
+            padding: 0 15px;
+            .start-badge{
+              padding: 4px 14px;
+              span{
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 500;
+              }
+            }
+            .title{
+              .title-top{
+                font-size: 48px;
+                line-height: 56px;
+              }
+              .title-bottom{
+                font-size: 32px;
+                line-height: 40px;
+              }
+            }
+            .subtitle{
+              font-size: 18px;
+              line-height: 24px;
+            }
+            .start-button{
+              padding: 16px 32px;
+            } 
+            .epsilon-highlights{
+
+              .bybitGif, .primaryLight{
+                display: none;
+              }
+              .secondaryLight-first{
+                left: -80%;
+                bottom: -40%;
+                width: auto;
+                max-width: 1000px;
+              }
+              .bybitGif_mobile{
+                display: flex;
+                max-width: 360px;
+                max-height: 1100px;
+                object-fit:cover;
+              }
+              .secondaryLight-second{
+                left: -30%;
+                top: -55%;
+                width: auto;
+                max-width: 1000px;
+                opacity: 1;
+        
+              }
+            }
+          }
         }
       }
     }

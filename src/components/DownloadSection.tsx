@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/DownloadSection.scss";
-import primaryLight from "../images/primary-light.svg";
+import secondaryLight from "../images/secondary-light.svg";
 
 function DownloadSection() {
   return (
@@ -17,7 +17,9 @@ function DownloadSection() {
           <span>Download</span>
         </button>
       </div>
-      <img src={primaryLight} alt="primaryLight" />
+      <img src={secondaryLight} alt="secondaryLight" className="primaryLight" />
+      <img src={secondaryLight} alt="secondaryLight" className="secondaryLight" />
+      <img src={secondaryLight} alt="secondaryLight" className="secondaryLight-second" />
     </section>
   );
 }

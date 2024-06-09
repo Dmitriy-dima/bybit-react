@@ -21,46 +21,79 @@
       line-height: 56px;
       font-weight: 600;
       text-align: center;
+      max-width: 650px;
     }
-    .faq-questions {
+  }
+  .faq-questions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1156px;
+    gap: 8px;
+    .faq-question {
       display: flex;
-      align-items: center;
-      justify-content: center;
       flex-direction: column;
+      justify-content: flex-start;
+      border-radius: 12px;
+      padding: 20px;
       width: 100%;
-      max-width: 1156px;
+      max-width: 686px;
+      background-color: rgba($bg-primary, 0.03);
       gap: 8px;
-      .faq-question {
+      cursor: pointer;
+      .faq-question_header {
         display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        border-radius: 12px;
-        padding: 20px;
         width: 100%;
-        max-width: 686px;
-        background-color: rgba($bg-primary, 0.03);
-        gap: 8px;
-        cursor: pointer;
-        .faq-question_header {
-          display: flex;
-          width: 100%;
-          justify-content: space-between;
-          h3 {
-            font-size: 24px;
-            line-height: 32px;
-            font-weight: 600;
-            max-width: 550px;
-          }
-          img {
-            max-width: 28px;
-            max-height: 28px;
-          }
+        justify-content: space-between;
+        h3 {
+          font-size: 24px;
+          line-height: 32px;
+          font-weight: 600;
+          max-width: 550px;
         }
-        p {
-          color: $text-secondary;
-          font-size: 18px;
-          line-height: 24px;
-          font-weight: 500;
+        img {
+          max-width: 28px;
+          max-height: 28px;
+        }
+      }
+      p {
+        color: $text-secondary;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 491px) and (max-width: 630px) {
+  .faq-section {
+    .faq-container {
+    }
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 490px) {
+  .faq-section {
+    .faq-container {
+      h2 {
+        font-size: 32px;
+        line-height: 40px;
+      }
+      .faq-questions{
+        .faq-question{
+          .faq-question_header{
+            h3{
+              font-size: 18px;
+              line-height: 24px;
+
+            }
+          }
+          p{
+            font-size: 16px;
+
+          }
         }
       }
     }

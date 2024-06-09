@@ -14,6 +14,7 @@
     max-width: 1156px;
     width: 100%;
     padding: 60px 25px 60px 25px;
+    gap: 40px;
     .welcome-text-container {
       display: flex;
       flex-direction: column;
@@ -74,6 +75,36 @@
             font-weight: 500;
             line-height: 24px;
             color: $text-secondary;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 0) and (max-width: 630px) {
+  .welcome-section{
+    .welcome-container{
+      flex-direction: column;
+    }
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 490px) {
+  .welcome-section{
+    .welcome-container{
+      .welcome-text-container{
+        .welcome-badge{
+          span{
+            font-size: 16px;
+            line-height: 24px;
+          }
+        }
+        h2{
+          font-size: 32px;
+          line-height: 40px;
+        }
+        p{
+          font-size: 18px;
+          line-height: 24px;
         }
       }
     }

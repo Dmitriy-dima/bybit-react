@@ -51,14 +51,20 @@ function Footer() {
         </div>
       </div>
       <div className="footer-bottom">
-        <span className="copyright">
-          © 2018-2024 Bybit.com. All rights reserved.
-        </span>
-        
-        <ul className="footer-bottom_links">
-          <li><Link to="/terms"> Terms of Service </Link></li>
-          <li><Link to="/privacy"> Privacy Terms </Link></li>
-        </ul>
+        <div className="footer-bottom_content">
+          <span className="copyright">
+            © 2018-2024 Bybit.com. All rights reserved.
+          </span>
+
+          <ul className="footer-bottom_links">
+            <li>
+              <Link to="/terms"> Terms of Service </Link>
+            </li>
+            <li>
+              <Link to="/privacy"> Privacy Terms </Link>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   );

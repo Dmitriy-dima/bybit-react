@@ -27,6 +27,7 @@
         width: 100%;
         max-width: 425px;
         gap: 24px;
+        
         .trading_text {
           display: flex;
           flex-direction: column;
@@ -90,34 +91,48 @@
           }
         }
       }
+      .trading-download-mobile {
+        display: none;
+      }
+
       .copy-trading_slider {
         display: flex;
         gap: 12px;
         width: 100%;
-        
-        .arrow-container{
+
+        .arrow-container {
           display: flex;
-          height: 100%;
           width: 100%;
           justify-content: center;
           align-items: center;
-          .slick-arrow-custom{
+          z-index: 4;
+          .slick-arrow-custom {
             display: flex;
             justify-content: center;
             align-items: center;
             border-radius: 100%;
             padding: 6px;
-            background-color: #ffb11a;
+            background-color: $bg-accent;
             cursor: pointer;
-            &.slick-next-custom{
+            &.slick-prev-custom {
               position: relative;
-              right: 12px;
+              right: -16px;
             }
-
+            &.slick-next-custom {
+              position: relative;
+              left: -5px;
+            }
+            &:hover {
+              background-color: $bg-accent-hover;
+            }
             max-width: 32px;
             max-height: 32px;
-            &.slick-disabled{
+            &.slick-disabled {
               opacity: 0.25;
+              &:hover {
+                background-color: $bg-accent;
+                cursor: not-allowed;
+              }
             }
           }
         }
@@ -132,17 +147,21 @@
             border-radius: 100%;
             padding: 6px;
             background-color: $bg-accent;
-            &.slick-prev{
+            &.slick-prev {
               left: -41px;
             }
-            &.slick-disabled{
+            &.slick-disabled {
               opacity: 0.25;
+              &:hover {
+                background-color: $bg-accent;
+                cursor: not-allowed;
+              }
             }
-            &.slick-next{
+            &.slick-next {
               right: -32px;
             }
-            &::before{
-              content:none;
+            &::before {
+              content: none;
             }
             img {
               max-width: 20px;
@@ -150,11 +169,20 @@
             }
           }
           .slick-list {
-            overflow: hidden;
-            max-width: 512px;
-          }
-          .slick-track {
             display: flex;
+            max-width: 512px;
+            .slick-track {
+              display: flex;
+              gap: 12px;
+              .slick-slide {
+                display: flex;
+                width: 100%;
+                div {
+                  display: flex;
+                  width: 244px;
+                }
+              }
+            }
           }
         }
         .slide {
@@ -191,24 +219,129 @@
               }
             }
           }
-          .slide-stats {
+
+          .slide-stats,
+          .slide-followers {
             display: flex;
             flex-direction: column;
-            span {
-              color: $text-primary-inverse;
+            .stats-name {
+              color: $text-secondary-inverse;
               font-size: 16px;
               line-height: 24px;
               font-weight: 500;
             }
-          }
-          .slide-followers {
-            display: flex;
-            flex-direction: column;
-            span {
+            span{
               color: $text-primary-inverse;
-              font-size: 16px;
-              line-height: 24px;
-              font-weight: 500;
+              font-size: 24px;
+              line-height: 32px;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 0) and (max-width: 930px) {
+  .copy-trading-section {
+    .copy-trading_container {
+      .copy-trading {
+        flex-direction: column;
+        gap: 40px;
+        .copy-trading_content {
+          max-width: 100%;
+          padding: 0 12px;
+          box-sizing: border-box;
+          
+          .trading-download {
+            display: none;
+          }
+          .trading_stats {
+            max-width: 100%;
+            width: auto;
+            box-sizing: border-box;
+            .stats_card {
+              max-width: 282px;
+            }
+          }
+        }
+        .copy-trading_slider {
+          
+          .arrow-container {
+            display: none;
+          }
+          .slick-slider,
+          .slick-initialized {
+            display: flex;
+            max-width: 100%;
+            .slick-list {
+              display: flex;
+              max-width: 790px;
+            }
+          }
+        }
+        .trading-download-mobile {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          align-self: center;
+          margin-top: 8px;
+          border: none;
+          border-radius: 6px;
+          cursor: pointer;
+          background-color: $bg-accent;
+          padding: 24px 40px 24px 40px;
+          max-width: 165px;
+          &:hover {
+            background-color: $bg-accent-hover;
+          }
+          span {
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 600;
+            color: $text-primary-inverse;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 490px) {
+  .copy-trading-section {
+    .copy-trading_container {
+      .copy-trading {
+        flex-direction: column;
+        gap: 40px;
+        .trading-download-mobile{
+          padding: 16px 32px;
+        }
+        .copy-trading_content {
+          max-width: 100%;
+          .trading-download {
+            display: none;
+          }
+          .trading_stats {
+            flex-direction: column;
+            .stats_card {
+              width: auto;
+            }
+          }
+        }
+        .copy-trading_slider {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .arrow-container {
+            display: none;
+          }
+          .slick-slider,
+          .slick-initialized {
+            display: flex;
+            max-width: 100%;
+            .slick-list {
+              display: flex;
+              max-width: 264px;
             }
           }
         }
