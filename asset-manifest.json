@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/bybit-react/static/css/main.df943d1b.css",
+    "main.js": "/bybit-react/static/js/main.0e0c95c7.js",
+    "static/media/bybitgraphs.gif": "/bybit-react/static/media/bybitgraphs.0a4f6975f3e5298d3227.gif",
+    "static/media/ravatar.svg": "/bybit-react/static/media/ravatar.989a2155de17d7bb42aafee997c55255.svg",
+    "static/media/IBMPlexSans-SemiBold.ttf": "/bybit-react/static/media/IBMPlexSans-SemiBold.f2e690b59fb90d236c08.ttf",
+    "static/media/IBMPlexSans-Medium.ttf": "/bybit-react/static/media/IBMPlexSans-Medium.56fb541cbbc5462f1c33.ttf",
+    "static/media/bybitgraphs_mobile.gif": "/bybit-react/static/media/bybitgraphs_mobile.1ba83ff9bf6dad901b8e.gif",
+    "static/media/bavatar.svg": "/bybit-react/static/media/bavatar.7a6cfa646b883094d6cd562b851d86b8.svg",
+    "static/media/star.svg": "/bybit-react/static/media/star.0e96c9bb6c555155b53fd8394cc8ec73.svg",
+    "static/media/shield.svg": "/bybit-react/static/media/shield.2c16c7d78166f419dd64c52b45b0535c.svg",
+    "static/media/efficientIcon.svg": "/bybit-react/static/media/efficientIcon.83541441760c1b55513f99ca49bafa6f.svg",
+    "static/media/palette.svg": "/bybit-react/static/media/palette.6cd8d91bb601615a00dfc4714cfcc41d.svg",
+    "static/media/slick.svg": "/bybit-react/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/bybit-react/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/bybit-react/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/instagram.svg": "/bybit-react/static/media/instagram.0385fdc1d4f823f6f9a7ace9f539b32d.svg",
+    "static/media/logo-dark.svg": "/bybit-react/static/media/logo-dark.f09bb055c9bc05e5af82fbbca2102c40.svg",
+    "static/media/logo.svg": "/bybit-react/static/media/logo.122963feb17f8aecd44db781afc9cfc5.svg",
+    "static/media/slick.woff": "/bybit-react/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/linkedin.svg": "/bybit-react/static/media/linkedin.ea1f62409202e71304bf87fc34aa762a.svg",
+    "static/media/close.svg": "/bybit-react/static/media/close.0a00841a158fb000edf5aad086f31a6b.svg",
+    "static/media/plus.svg": "/bybit-react/static/media/plus.f315705d38deb82e458202284d01745c.svg",
+    "static/media/menu.svg": "/bybit-react/static/media/menu.468d670beeb81008bc18fa5ee8f5d46e.svg",
+    "static/media/x-twitter.svg": "/bybit-react/static/media/x-twitter.82f86f01b13db1c5c764c415286af714.svg",
+    "static/media/facebook.svg": "/bybit-react/static/media/facebook.855b1c00828331c56afb1a8158bc3607.svg",
+    "index.html": "/bybit-react/index.html",
+    "static/media/nextIcon.svg": "/bybit-react/static/media/nextIcon.6c3a1c34c74b8c242fd11d18645e87a1.svg",
+    "static/media/prevIcon.svg": "/bybit-react/static/media/prevIcon.95b7024eeca93bfa045f8e5e8893e5d8.svg",
+    "static/media/primary-light.svg": "/bybit-react/static/media/primary-light.78419a0704940b5da31eb4366dbeebe9.svg",
+    "static/media/secondary-light.svg": "/bybit-react/static/media/secondary-light.5483654b8933c0fd5e845dea380873b1.svg",
+    "static/media/minus.svg": "/bybit-react/static/media/minus.910043ac8710de49a366d6f637b6c1ac.svg",
+    "main.df943d1b.css.map": "/bybit-react/static/css/main.df943d1b.css.map",
+    "main.0e0c95c7.js.map": "/bybit-react/static/js/main.0e0c95c7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.df943d1b.css",
+    "static/js/main.0e0c95c7.js"
+  ]
+}
