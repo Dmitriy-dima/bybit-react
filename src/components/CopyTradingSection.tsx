@@ -1,24 +1,56 @@
-import React from "react";
+import React, { useRef, useState, useEffect } from "react";
 import "../css/CopyTrading.scss";
 import avatar from "../images/bavatar.svg";
 import avatar_2 from "../images/ravatar.svg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { NextArrow, PrevArrow } from "./CustomArrows";
+import prevIcon from "../images/prevIcon.svg";
+import nextIcon from "../images/nextIcon.svg";
+
+type SliderRef = Slider & { slickPrev: () => void; slickNext: () => void };
 
 function CopyTradingSection() {
+  const sliderRef = useRef<SliderRef | null>(null);
+  const [isPrevDisabled, setIsPrevDisabled] = useState(true);
+  const [isNextDisabled, setIsNextDisabled] = useState(false);
+
   const settings = {
     infinite: false,
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 2,
-    arrows: true,
+    arrows: false,
     dots: false,
     swipeToSlide: true,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
+    beforeChange: (current: number, next: number) => {
+      const totalSlides = sliderRef.current ? React.Children.count(sliderRef.current.props.children) : 0;
+      const slidesToShow = settings.slidesToShow as number;
+      setIsPrevDisabled(next === 0);
+      setIsNextDisabled(next >= totalSlides - slidesToShow);
+    }
   };
+
+  const handlePrevClick = () => {
+    if (sliderRef.current) {
+      sliderRef.current.slickPrev();
+    }
+  };
+
+  const handleNextClick = () => {
+    if (sliderRef.current) {
+      sliderRef.current.slickNext();
+    }
+  };
+
+  useEffect(() => {
+    // Set initial button states
+    const totalSlides = sliderRef.current ? React.Children.count(sliderRef.current.props.children) : 0;
+    const slidesToShow = settings.slidesToShow as number;
+    const currentSlide = (sliderRef.current?.innerSlider as any)?.state?.currentSlide || 0;
+    setIsPrevDisabled(currentSlide === 0);
+    setIsNextDisabled(currentSlide >= totalSlides - slidesToShow);
+  }, []);
 
   return (
     <section className="copy-trading-section">
@@ -45,7 +77,13 @@ function CopyTradingSection() {
             </button>
           </div>
           <div className="copy-trading_slider">
-            <Slider {...settings}>
+            <div className="arrow-container">
+              <div className={`slick-arrow-custom slick-prev-custom ${isPrevDisabled ? "slick-disabled" : ""}`} onClick={handlePrevClick}>
+                <img src={prevIcon} alt="Prev Icon" />
+              </div>
+            </div>
+
+            <Slider ref={sliderRef} {...settings}>
               <div className="slide">
                 <div className="slide-profile">
                   <img src={avatar} alt="avatar" />
@@ -115,6 +153,11 @@ function CopyTradingSection() {
                 </div>
               </div>
             </Slider>
+            <div className="arrow-container">
+              <div  className={`slick-arrow-custom slick-next-custom ${isNextDisabled ? "slick-disabled" : ""}`} onClick={handleNextClick}>
+                <img src={nextIcon} alt="Next Icon" />
+              </div>
+            </div>
           </div>
         </div>
       </div>

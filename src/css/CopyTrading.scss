@@ -92,12 +92,39 @@
       }
       .copy-trading_slider {
         display: flex;
-        flex-wrap: wrap;
         gap: 12px;
         width: 100%;
-        max-width: 544px;
+        
+        .arrow-container{
+          display: flex;
+          height: 100%;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+          .slick-arrow-custom{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+            padding: 6px;
+            background-color: #ffb11a;
+            cursor: pointer;
+            &.slick-next-custom{
+              position: relative;
+              right: 12px;
+            }
+
+            max-width: 32px;
+            max-height: 32px;
+            &.slick-disabled{
+              opacity: 0.25;
+            }
+          }
+        }
+
         .slick-slider {
-          
+          display: flex;
+          align-items: center;
           .slick-arrow {
             display: flex;
             justify-content: center;
