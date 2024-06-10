@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/bybit-react/static/css/main.5481dcff.css",
-    "main.js": "/bybit-react/static/js/main.9965cebf.js",
+    "main.css": "/bybit-react/static/css/main.b63403da.css",
+    "main.js": "/bybit-react/static/js/main.528b3215.js",
     "static/media/bybitgraphs.gif": "/bybit-react/static/media/bybitgraphs.0a4f6975f3e5298d3227.gif",
     "static/media/ravatar.svg": "/bybit-react/static/media/ravatar.989a2155de17d7bb42aafee997c55255.svg",
     "static/media/IBMPlexSans-SemiBold.ttf": "/bybit-react/static/media/IBMPlexSans-SemiBold.f2e690b59fb90d236c08.ttf",
@@ -30,11 +30,11 @@
     "static/media/prevIcon.svg": "/bybit-react/static/media/prevIcon.95b7024eeca93bfa045f8e5e8893e5d8.svg",
     "static/media/secondary-light.svg": "/bybit-react/static/media/secondary-light.5483654b8933c0fd5e845dea380873b1.svg",
     "static/media/minus.svg": "/bybit-react/static/media/minus.910043ac8710de49a366d6f637b6c1ac.svg",
-    "main.5481dcff.css.map": "/bybit-react/static/css/main.5481dcff.css.map",
-    "main.9965cebf.js.map": "/bybit-react/static/js/main.9965cebf.js.map"
+    "main.b63403da.css.map": "/bybit-react/static/css/main.b63403da.css.map",
+    "main.528b3215.js.map": "/bybit-react/static/js/main.528b3215.js.map"
   },
   "entrypoints": [
-    "static/css/main.5481dcff.css",
-    "static/js/main.9965cebf.js"
+    "static/css/main.b63403da.css",
+    "static/js/main.528b3215.js"
   ]
 }
