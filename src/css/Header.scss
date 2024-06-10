@@ -29,6 +29,7 @@
       .menu-header_right {
         display: flex;
         align-items: center;
+        padding-right: 25px;
         .close-button {
           background: none;
           border: none;
@@ -195,7 +196,7 @@
       }
 
       .header-right {
-
+        
         .burger-menu {
           display: flex;
           cursor: pointer;
