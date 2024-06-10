@@ -243,7 +243,7 @@
   }
 }
 
-@media screen and (min-width: 0) and (max-width: 930px) {
+@media screen and (min-width: 0) and (max-width: 990px) {
   .copy-trading-section {
     .copy-trading_container {
       .copy-trading {
@@ -277,7 +277,52 @@
             max-width: 100%;
             .slick-list {
               display: flex;
+              width: auto;
               max-width: 790px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 0) and (max-width: 890px) {
+  .copy-trading-section {
+    .copy-trading_container {
+      .copy-trading {
+        flex-direction: column;
+        gap: 40px;
+        .copy-trading_content {
+          max-width: 100%;
+          padding: 0 12px;
+          box-sizing: border-box;
+          
+          .trading-download {
+            display: none;
+          }
+          .trading_stats {
+            max-width: 100%;
+            width: auto;
+            box-sizing: border-box;
+            .stats_card {
+              max-width: 282px;
+            }
+          }
+        }
+        .copy-trading_slider {
+          
+          .arrow-container {
+            display: none;
+          }
+          .slick-slider,
+          .slick-initialized {
+            display: flex;
+            max-width: 100%;
+            .slick-list {
+              display: flex;
+              width: auto;
+              max-width: 500px;
             }
           }
         }
@@ -307,7 +352,7 @@
     }
   }
 }
-@media screen and (min-width: 0px) and (max-width: 490px) {
+@media screen and (min-width: 0px) and (max-width: 560px) {
   .copy-trading-section {
     .copy-trading_container {
       .copy-trading {

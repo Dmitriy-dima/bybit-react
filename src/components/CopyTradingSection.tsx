@@ -19,11 +19,11 @@ function CopyTradingSection() {
 
 	const updateSliderSettings = () => {
 		const width = window.innerWidth;
-		if (width <= 490) {
+		if (width <= 560) {
 			setSlidesToShow(1);
-		} else if (width <= 702) {
+		} else if (width <= 890) {
 			setSlidesToShow(2);
-		} else if (width <= 930) {
+		} else if (width <= 990) {
 			setSlidesToShow(3);
 		} else {
 			setSlidesToShow(2);
